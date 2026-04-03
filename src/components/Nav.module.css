@@ -13,24 +13,24 @@
 
 .logo {
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ink);
 }
 
 .links {
   display: flex;
-  gap: 36px;
+  gap: 32px;
   list-style: none;
 }
 
 .links a {
   font-family: var(--font-display);
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.14em;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--dim);

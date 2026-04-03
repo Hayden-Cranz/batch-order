@@ -1,30 +1,31 @@
 .hero {
-  padding: 160px 48px 120px;
+  min-height: calc(100vh - 60px);
+  padding: 0 48px;
   border-bottom: 1px solid var(--stone);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: end;
+  align-items: center;
 }
 
 .label {
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 500;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.26em;
   text-transform: uppercase;
   color: var(--sage);
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   opacity: 0;
   animation: up 0.7s ease 0.1s forwards;
 }
 
 .headline {
   font-family: var(--font-display);
-  font-size: clamp(48px, 7vw, 88px);
+  font-size: clamp(64px, 10vw, 120px);
   font-weight: 300;
-  line-height: 1.0;
-  letter-spacing: -0.01em;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
   color: var(--ink);
   opacity: 0;
   animation: up 0.8s ease 0.25s forwards;
@@ -36,34 +37,34 @@
 }
 
 .right {
-  padding-bottom: 8px;
+  padding-bottom: 0;
   opacity: 0;
   animation: up 0.8s ease 0.45s forwards;
 }
 
 .body {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.75;
   color: var(--dim);
-  max-width: 400px;
-  margin-bottom: 48px;
+  max-width: 380px;
+  margin-bottom: 36px;
 }
 
 .ctas {
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 
 .btn {
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 14px 28px;
+  padding: 12px 24px;
   border: 1px solid var(--ink);
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
@@ -80,9 +81,14 @@
   background: transparent;
   color: var(--ink);
 }
-.ghost:hover { background: var(--off); }
+.ghost:hover { background: var(--stone); }
 
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; padding: 120px 24px 80px; gap: 48px; }
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding: 72px 24px 60px;
+    gap: 40px;
+  }
   .body { max-width: 100%; }
 }
