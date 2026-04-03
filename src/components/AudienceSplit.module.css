@@ -35,7 +35,7 @@
 
 .body {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.75;
   color: var(--dim);
@@ -51,7 +51,7 @@
 
 .perks li {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   color: var(--dim);
   padding: 13px 0;
