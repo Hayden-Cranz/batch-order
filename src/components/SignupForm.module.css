@@ -1,8 +1,8 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 340px;
+  gap: 0;
+  max-width: 380px;
   margin-top: auto;
 }
 
@@ -11,9 +11,9 @@
   border: none;
   border-bottom: 1px solid var(--stone);
   color: var(--ink);
-  padding: 12px 0;
+  padding: 14px 0;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
   outline: none;
   transition: border-color 0.2s;
@@ -29,31 +29,32 @@
 
 .error {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: 13px;
   color: var(--red);
   font-weight: 300;
+  padding-top: 6px;
 }
 
 .success {
-  font-size: 12px;
+  font-family: var(--font-body);
+  font-size: 15px;
   font-weight: 400;
-  letter-spacing: 0.08em;
   color: var(--sage);
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .btn {
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   padding: 14px 28px;
   border: 1px solid var(--ink);
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
   align-self: flex-start;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .btn:disabled { opacity: 0.35; cursor: not-allowed; }
@@ -62,4 +63,10 @@
 .filled:hover:not(:disabled) { background: var(--dim); border-color: var(--dim); }
 
 .ghost { background: transparent; color: var(--ink); }
-.ghost:hover:not(:disabled) { background: var(--off); }
+.ghost:hover:not(:disabled) { background: var(--stone); }
+
+@media (max-width: 480px) {
+  .form { max-width: 100%; }
+  .form input { font-size: 16px; } /* prevent iOS zoom */
+  .btn { align-self: stretch; text-align: center; }
+}

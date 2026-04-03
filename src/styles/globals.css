@@ -24,6 +24,11 @@ body {
   font-family: var(--font-body);
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
+  padding-top: 64px; /* fixed nav height */
+}
+
+@media (max-width: 860px) {
+  body { padding-top: 60px; }
 }
 
 @keyframes up {

@@ -1,7 +1,7 @@
 .section {
   padding: 88px 48px;
   border-bottom: 1px solid var(--stone);
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .header {
@@ -13,9 +13,9 @@
 
 .label {
   font-family: var(--font-display);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--sage);
   white-space: nowrap;
@@ -29,12 +29,11 @@
 
 .quote {
   font-family: var(--font-display);
-  font-size: clamp(28px, 4vw, 52px);
+  font-size: clamp(32px, 4.5vw, 58px);
   font-weight: 300;
   line-height: 1.15;
   color: var(--ink);
-  letter-spacing: 0;
-  margin-bottom: 44px;
+  margin-bottom: 48px;
 }
 
 .quote span {
@@ -50,13 +49,21 @@
 
 .body p {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.85;
   color: var(--dim);
 }
 
+/* Tablet */
 @media (max-width: 860px) {
-  .section { padding: 52px 24px; }
-  .body { grid-template-columns: 1fr; }
+  .section { padding: 64px 24px; }
+  .body { grid-template-columns: 1fr; gap: 24px; }
+  .body p { font-size: 15px; }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .section { padding: 48px 20px; }
+  .quote { font-size: clamp(28px, 9vw, 44px); }
 }
