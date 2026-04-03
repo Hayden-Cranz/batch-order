@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Logo } from './Logo';
 import styles from './Nav.module.css';
 
 export function Nav() {
@@ -7,7 +8,7 @@ export function Nav() {
   return (
     <>
       <nav className={styles.nav}>
-        <div className={styles.logo}>Batch Order</div>
+        <Logo size="md" variant="full" />
         <ul className={styles.links}>
           <li><a href="#how">How it works</a></li>
           <li><a href="#makers">Makers</a></li>

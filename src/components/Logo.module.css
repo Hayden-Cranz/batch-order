@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.mark {
+  flex-shrink: 0;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  line-height: 1;
+}
+
+/* Sizes */
+.sm .mark  { width: 14px; height: 19px; }
+.sm .wordmark { font-size: 12px; }
+
+.md .mark  { width: 18px; height: 24px; }
+.md .wordmark { font-size: 15px; }
+
+.lg .mark  { width: 28px; height: 38px; }
+.lg .wordmark { font-size: 22px; }

@@ -14,7 +14,7 @@
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--sage);
+  color: var(--amber);
   margin-bottom: 24px;
   opacity: 0;
   animation: up 0.65s ease 0.05s forwards;
