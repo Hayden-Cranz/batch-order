@@ -17,7 +17,7 @@
   color: var(--sage);
   margin-bottom: 28px;
   opacity: 0;
-  animation: up 0.7s ease 0.1s forwards;
+  animation: up 0.65s ease 0.05s forwards;
 }
 
 .headline {
@@ -28,7 +28,7 @@
   letter-spacing: -0.02em;
   color: var(--ink);
   opacity: 0;
-  animation: up 0.8s ease 0.25s forwards;
+  animation: up 0.65s ease 0.15s forwards;
 }
 
 .headline strong {
@@ -39,7 +39,7 @@
 .right {
   padding-bottom: 0;
   opacity: 0;
-  animation: up 0.8s ease 0.45s forwards;
+  animation: up 0.65s ease 0.28s forwards;
 }
 
 .body {
@@ -82,6 +82,11 @@
   color: var(--ink);
 }
 .ghost:hover { background: var(--stone); }
+
+@keyframes up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: none; }
+}
 
 @media (max-width: 860px) {
   .hero {
